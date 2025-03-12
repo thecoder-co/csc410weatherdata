@@ -182,7 +182,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
                                           )!.toStringAsFixed(2)}°' : '--'}°',
                                         style: const TextStyle(
                                           color: Colors.white,
-                                          fontSize: 32,
+                                          fontSize: 26,
                                           height: 1.20,
                                           letterSpacing: 0.38,
                                         ),
@@ -203,7 +203,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
                                           )!.toStringAsFixed(2) : '--'}°',
                                         style: const TextStyle(
                                           color: Colors.white,
-                                          fontSize: 32,
+                                          fontSize: 26,
                                           height: 1.20,
                                           letterSpacing: 0.38,
                                         ),
@@ -224,7 +224,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
                                           )!.toStringAsFixed(2) : '--'}°',
                                         style: const TextStyle(
                                           color: Colors.white,
-                                          fontSize: 32,
+                                          fontSize: 26,
                                           height: 1.20,
                                           letterSpacing: 0.38,
                                         ),
@@ -241,31 +241,29 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
                               launchUrl(Uri.parse(
                                   'https://sheetdb.io/api/v1/u6hmify2sgfwc'));
                             },
-                            child: Expanded(
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(20),
-                                child: BackdropFilter(
-                                  filter: ui.ImageFilter.blur(
-                                      sigmaX: 45, sigmaY: 45),
-                                  child: Container(
-                                    height: double.infinity,
-                                    padding: const EdgeInsets.all(20),
-                                    decoration: BoxDecoration(
-                                      border: Border.all(
-                                        width: 1,
-                                        color: Colors.grey[100]!,
-                                      ),
-                                      borderRadius: BorderRadius.circular(20),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20),
+                              child: BackdropFilter(
+                                filter:
+                                    ui.ImageFilter.blur(sigmaX: 45, sigmaY: 45),
+                                child: Container(
+                                  height: double.infinity,
+                                  padding: const EdgeInsets.all(20),
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                      width: 1,
+                                      color: Colors.grey[100]!,
                                     ),
-                                    child: const Center(
-                                      child: Text(
-                                        'Export All Data',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 32,
-                                          height: 1.20,
-                                          letterSpacing: 0.38,
-                                        ),
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                  child: const Center(
+                                    child: Text(
+                                      'Export All Data',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 32,
+                                        height: 1.20,
+                                        letterSpacing: 0.38,
                                       ),
                                     ),
                                   ),
